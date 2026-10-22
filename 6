@@ -1,0 +1,28 @@
+x = imread('e:\mage3.jpg');
+
+subplot(1,2,1);
+image(x);
+axis off;
+title('Original Image');
+
+colormap('default');
+
+n = 5;
+w = 'sym8';
+
+[c,l] = wavedec2(x,n,w);
+
+opt = 'gbl';
+thr = 30;
+sorh = 'h';
+keepapp = 1;
+
+[xd,cxd,lxd,perf0,perfl2] = ...
+    wdencmp(opt,c,l,w,n,thr,sorh,keepapp);
+
+colormap('default');
+
+subplot(1,2,2);
+image(uint8(xd));
+title('Compressed Image - Global Threshold = 30');
+axis off;
