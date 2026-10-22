@@ -1,0 +1,14 @@
+I = imread('e:\nature.jpg');
+
+% Defining a structuring element of disk type
+background = imopen(I, strel('disk',70));
+
+ip = imsubtract(I, background);
+
+subplot(1,2,1);
+imshow(I);
+title('Original Image');
+
+subplot(1,2,2);
+imshow(ip, []);
+title('Subtracted Image');
