@@ -1,0 +1,30 @@
+Image = imread('e:\Sample Images1\dipedge.jpg');
+I = rgb2gray(Image);
+
+subplot(3,2,1);
+imshow(I);
+title('Original Image');
+
+sobel_img = edge(I, 'sobel');
+
+subplot(3,2,2);
+imshow(sobel_img);
+title('Sobel Image');
+
+canny_img = edge(I, 'canny');
+
+subplot(3,2,3);
+imshow(canny_img);
+title('Canny Image');
+
+prewit_img = edge(I, 'prewitt');
+
+subplot(3,2,4);
+imshow(prewit_img);
+title('Prewitt Image');
+
+Robert_img = edge(I, 'roberts');
+
+subplot(3,2,5);
+imshow(Robert_img);
+title('Roberts Image');
