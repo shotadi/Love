@@ -1,0 +1,22 @@
+Image = imread('e:\bird.jpg');
+I = rgb2gray(Image);
+
+I1 = imadjust(I);
+I2 = histeq(I);
+I3 = adapthisteq(I);
+
+subplot(2,2,1);
+imshow(I);
+title('Original Image');
+
+subplot(2,2,2);
+imshow(I1);
+title('Adjusted Image');
+
+subplot(2,2,3);
+imshow(I2);
+title('Histogram Equalized Image');
+
+subplot(2,2,4);
+imshow(I3);
+title('Adaptive Histogram Equalization');
