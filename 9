@@ -1,0 +1,26 @@
+f = imread('e:\Sample Images1\dipbrain.jpg');
+
+bw = im2bw(f, graythresh(f));
+bwc = ~bw;
+
+dst = bwdist(bwc);
+ws = watershed(~dst);
+
+w = ws == 0;
+rf = bw & ~w;
+
+subplot(2,2,1);
+imshow(f);
+title('Original Image');
+
+subplot(2,2,2);
+imshow(bw);
+title('Black and White Image');
+
+subplot(2,2,3);
+imshow(ws, []);
+title('Watershed Distance Transform');
+
+subplot(2,2,4);
+imshow(rf);
+title('Superimposed Watershed and Original Image');
