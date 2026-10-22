@@ -1,0 +1,20 @@
+Image = imread('e:\diphist1.jpg');
+I = rgb2gray(Image);
+HistI = histeq(I);
+
+subplot(2,2,1);
+imshow(I);
+title('Original Image');
+
+subplot(2,2,2);
+imshow(HistI);
+title('Contrast Image');
+xlabel('Contrast Increased by Histogram Equalization');
+
+subplot(2,2,3);
+imhist(I);
+title('Histogram of Original Image');
+
+subplot(2,2,4);
+imhist(HistI);
+title('Histogram of Equalized Image');
