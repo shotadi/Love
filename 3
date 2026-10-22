@@ -1,0 +1,26 @@
+I = im2double(imread('e:\building.jpg'));
+
+subplot(2,2,1);
+imshow(I);
+title('Original Image');
+
+LEN = 21;
+THETA = 11;
+
+PSF = fspecial('motion', LEN, THETA);
+blurred = imfilter(I, PSF, 'conv', 'circular');
+
+subplot(2,2,2);
+imshow(blurred);
+title('Blurred Image');
+
+noise_mean = 0;
+noise_var = 0.0001;
+
+estimated_nsr = noise_var / var(I(:));
+
+wnr1 = deconvwnr(blurred, PSF, estimated_nsr);
+
+subplot(2,2,3);
+imshow(wnr1);
+title('Restored Image');
