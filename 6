@@ -1,28 +1,96 @@
-x = imread('e:\mage3.jpg');
+<!-- Program 6: Student Registration Form -->
 
-subplot(1,2,1);
-image(x);
-axis off;
-title('Original Image');
+<html>
+<head>
+<title>Registration Form</title>
 
-colormap('default');
+<script>
+function myFunction()
+{
+    alert("YOUR RECORD IS SUCCESSFULLY SAVED!");
+}
+</script>
+</head>
 
-n = 5;
-w = 'sym8';
+<body bgcolor="lightyellow">
 
-[c,l] = wavedec2(x,n,w);
+<center>
+<h1>Inter-Collegiate "XAVION"</h1>
+<h2>Registration Form</h2>
+<h2>Pioneer College of Arts and Science</h2>
+<h3>Jothipuram, Coimbatore</h3>
+<h3>Department of Computer Science</h3>
+<h2>Student Registration Form</h2>
+</center>
 
-opt = 'gbl';
-thr = 30;
-sorh = 'h';
-keepapp = 1;
+<form>
 
-[xd,cxd,lxd,perf0,perfl2] = ...
-    wdencmp(opt,c,l,w,n,thr,sorh,keepapp);
+College Name:
+<input type="text" name="college"><br><br>
 
-colormap('default');
+Courses:<br>
+<input type="radio" name="course" value="BCA">BCA
+<input type="radio" name="course" value="BSc IT">BSc IT
+<input type="radio" name="course" value="BSc CS">BSc CS
+<input type="radio" name="course" value="MSc CS">MSc CS
+<input type="radio" name="course" value="MCA">MCA
+<br><br>
 
-subplot(1,2,2);
-image(uint8(xd));
-title('Compressed Image - Global Threshold = 30');
-axis off;
+Year:
+<input type="text" name="year"><br><br>
+
+First Name:
+<input type="text" name="firstname"><br><br>
+
+Last Name:
+<input type="text" name="lastname"><br><br>
+
+Email ID:
+<input type="email" name="email"><br><br>
+
+Mobile Number:
+<input type="text" name="mobile"><br><br>
+
+Gender:<br>
+<input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female
+<br><br>
+
+Degree:<br>
+<input type="radio" name="degree" value="UG">UG
+<input type="radio" name="degree" value="PG">PG
+<br><br>
+
+Events:<br>
+<input type="radio" name="event" value="Paper Presentation">
+Paper Presentation<br>
+
+<input type="radio" name="event" value="Debugging">
+Debugging<br>
+
+<input type="radio" name="event" value="Word Hunt">
+Word Hunt<br>
+
+<input type="radio" name="event" value="Web Designing">
+Web Designing<br>
+
+<input type="radio" name="event" value="Technical Quiz">
+Technical Quiz<br><br>
+
+<h3>Rules and Regulations</h3>
+
+<ol>
+<li>Limited to 15 students from each college.</li>
+<li>Students must carry their ID cards.</li>
+<li>Register on the day of the fest; on-spot entry is not obliged.</li>
+<li>Read all the rules carefully.</li>
+<li>Events start as per schedule.</li>
+<li>Judges' decision is final.</li>
+</ol>
+
+<input type="button" value="Submit" onclick="myFunction()">
+<input type="reset" value="Reset">
+
+</form>
+</body>
+</html>
