@@ -1,16 +1,73 @@
-J = imread('e:\flower.jpg');
 
-I = rgb2gray(J);
 
-S = strel('disk',4,0);
-F = imerode(I,S);
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-figure;
+<html>
+<head>
+<title>Prime Number</title>
+</head>
 
-subplot(2,1,1);
-imshow(I);
-title('Original Image');
+<body>
 
-subplot(2,1,2);
-imshow(I-F);
-title('Boundary Extracted Image');
+<?php
+error_reporting(0);
+
+$a = $_POST['lower'];
+$b = $_POST['upper'];
+
+if (isset($_POST['clear']))
+{
+    $a = "";
+    $b = "";
+}
+?>
+
+<form action="prime.php" method="post">
+
+Enter Lower Limit:
+<input type="text" name="lower"
+value="<?php echo $a; ?>">
+
+<br><br>
+
+Enter Upper Limit:
+<input type="text" name="upper"
+value="<?php echo $b; ?>">
+
+<br><br>
+
+<input type="submit" name="submit" value="Ok">
+<input type="submit" name="clear" value="Clear">
+
+</form>
+
+<?php
+if (isset($_POST['submit']))
+{
+    $a = $_POST['lower'];
+    $b = $_POST['upper'];
+    $flag = 0;
+
+    for ($a; $a < $b; $a++)
+    {
+        for ($j = 2; $j < $a; $j++)
+        {
+            if ($a % $j == 0)
+            {
+                $flag = 1;
+            }
+        }
+
+        if ($flag == 0)
+        {
+            echo " " . $a . " ";
+        }
+
+        $flag = 0;
+    }
+}
+?>
+
+</body>
+</html>
