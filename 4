@@ -1,44 +1,132 @@
-A = imread('e:\Sample Images1\crow.jpg');
-A = rgb2gray(A);
+<!-- File 1: Frame.html -->
 
-subplot(2,2,1);
-imshow(A);
-title('Original Image');
+<html>
+<frameset cols="40%,60%">
+    <frame src="hospital.html">
+    <frame name="sf">
+</frameset>
+</html>
 
-A = imnoise(A, 'salt & pepper', 0.05);
 
-subplot(2,2,2);
-imshow(A);
-title('Image with Salt and Pepper Noise');
+<!-- File 2: hospital.html -->
 
-modifyA = zeros(size(A) + 2);
-B = zeros(size(A));
+<html>
+<body>
+<center>
+<h1>KR HOSPITAL</h1>
+<p>Perianaickenpalayam, Coimbatore-20</p>
+</center>
 
-for x = 1:size(A,1)
-    for y = 1:size(A,2)
-        modifyA(x+1,y+1) = A(x,y);
-    end
-end
+<a href="history.html" target="sf">History</a><br>
+<a href="doctors.html" target="sf">Doctors</a><br>
+<a href="facilities.html" target="sf">Facilities</a><br>
+<a href="medicalshop.html" target="sf">Medical Shop</a><br>
 
-for i = 1:size(modifyA,1)-2
-    for j = 1:size(modifyA,2)-2
-        window = zeros(9,1);
-        inc = 1;
+</body>
+</html>
 
-        for x = 1:3
-            for y = 1:3
-                window(inc) = modifyA(i+x-1,j+y-1);
-                inc = inc + 1;
-            end
-        end
 
-        med = sort(window);
-        B(i,j) = med(5);
-    end
-end
+<!-- File 3: history.html -->
 
-B = uint8(B);
+<html>
+<body>
+<center>
+<h1>KR HOSPITAL</h1>
+<p>Perinaikanpalayam, Coimbatore-20</p>
+<marquee><h2>HISTORY</h2></marquee>
+</center>
 
-subplot(2,2,3);
-imshow(B);
-title('Image After Median Filtering');
+<p>It was founded by Dr. Thilagam Rajesh.</p>
+<p>In the year 2002 at Karamadai.</p>
+<p>More than 5 doctors are working.</p>
+<p>More than 20 specialists are working.</p>
+<p>More than 40 nurses are working day and night.</p>
+<p>Hospital is situated in a clean atmosphere.</p>
+<p>40-50 patients are coming for treatment daily.</p>
+<p>Every individual patient is treated in a friendly manner.</p>
+
+</body>
+</html>
+
+
+<!-- File 4: doctors.html -->
+
+<html>
+<body>
+<center>
+<h1>KR HOSPITAL</h1>
+</center>
+
+<h2>Chief Doctor</h2>
+<p>Dr. Thilagam Rajesh</p>
+
+<h2>Doctors</h2>
+<ul>
+<li>Bharathi</li>
+<li>Jayakumar</li>
+<li>Vanitha</li>
+<li>Malathi</li>
+<li>Tamilselvi</li>
+</ul>
+
+<h2>Specialists</h2>
+<ul>
+<li>Sasithra - Child Specialist</li>
+<li>Jayakumari - Cardiologist</li>
+<li>Mohankumar - Pulmonologist</li>
+<li>Shankar - Pediatrician</li>
+<li>Yuvaraj - Neurologist</li>
+<li>Anitha - Diabetician</li>
+</ul>
+
+</body>
+</html>
+
+
+<!-- File 5: facilities.html -->
+
+<html>
+<body>
+<center>
+<h1>KR HOSPITAL</h1>
+<h2>FACILITIES</h2>
+</center>
+
+<ul>
+<li>Well equipped labs.</li>
+<li>The necessary equipments are available for all the tests.</li>
+<li>The operation theatre with all facilities.</li>
+<li>ICU available for 24 hours.</li>
+<li>Single room available for all the patients.</li>
+<li>4 ambulances are used for emergency cases (24 hours).</li>
+<li>Individual attention for each patient.</li>
+<li>Good treatment with less charge.</li>
+<li>Immediate attention is given for emergency cases.</li>
+<li>Specialists are available for all treatment.</li>
+</ul>
+
+</body>
+</html>
+
+
+<!-- File 6: medicalshop.html -->
+
+<html>
+<body>
+<center>
+<h1>KR HOSPITAL</h1>
+<h2>MEDICAL SHOP</h2>
+</center>
+
+<ul>
+<li>Medical facilities available inside the hospital campus.</li>
+<li>Medical shop available with all drugs and medicine.</li>
+<li>Medicines are available for every disease.</li>
+<li>Quick response for everyone.</li>
+<li>Discounts are given for each medicine.</li>
+<li>Medicines are not provided without doctor's prescription.</li>
+<li>Expired and duplicate medicines are not available here.</li>
+</ul>
+
+</body>
+</html>
