@@ -1,26 +1,126 @@
-I = im2double(imread('e:\building.jpg'));
+<!-- Program 3: Rank Holders and Semester Subjects -->
 
-subplot(2,2,1);
-imshow(I);
-title('Original Image');
+<html>
+<head>
+<style>
+table {
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+</style>
+</head>
 
-LEN = 21;
-THETA = 11;
+<body>
 
-PSF = fspecial('motion', LEN, THETA);
-blurred = imfilter(I, PSF, 'conv', 'circular');
+<center>
+<h1>Pioneer College of Arts and Science</h1>
+<h3>Jothipuram, Coimbatore-47</h3>
+<h2>MSc Rank Holders</h2>
+</center>
 
-subplot(2,2,2);
-imshow(blurred);
-title('Blurred Image');
+<table>
+<tr>
+<th>S.No</th>
+<th>Name</th>
+<th>Register No</th>
+<th>Course</th>
+<th>Marks</th>
+<th>Rank</th>
+</tr>
 
-noise_mean = 0;
-noise_var = 0.0001;
+<tr>
+<td>001</td>
+<td>XXX</td>
+<td>1832K02XX</td>
+<td>MSC(CS)</td>
+<td>498</td>
+<td>I</td>
+</tr>
 
-estimated_nsr = noise_var / var(I(:));
+<tr>
+<td>002</td>
+<td>YYY</td>
+<td>1832K02YY</td>
+<td>MSC(CS)</td>
+<td>496</td>
+<td>II</td>
+</tr>
 
-wnr1 = deconvwnr(blurred, PSF, estimated_nsr);
+<tr>
+<td>003</td>
+<td>WWW</td>
+<td>1832KWW</td>
+<td>MSC(CS)</td>
+<td>493</td>
+<td>III</td>
+</tr>
 
-subplot(2,2,3);
-imshow(wnr1);
-title('Restored Image');
+<tr>
+<td>004</td>
+<td>MMM</td>
+<td>1832KMM</td>
+<td>MSC(CS)</td>
+<td>490</td>
+<td>IV</td>
+</tr>
+
+<tr>
+<td>005</td>
+<td>SSS</td>
+<td>1832KSS</td>
+<td>MSC(CS)</td>
+<td>487</td>
+<td>V</td>
+</tr>
+</table>
+
+<h2>Semester I</h2>
+<ol>
+<li>Analysis and Design of Algorithm</li>
+<li>OOPS & C++</li>
+<li>Advanced Network</li>
+<li>Advanced Software Engineering</li>
+<li>Algorithm and OOPS Lab</li>
+<li>Software Testing Lab</li>
+</ol>
+
+<h2>Semester II</h2>
+<ol>
+<li>Data Mining and Warehousing</li>
+<li>Advanced Operating System</li>
+<li>Advanced Java Programming</li>
+<li>AI & Expert System</li>
+<li>Data Mining Using R</li>
+<li>Advanced Java Programming Lab</li>
+</ol>
+
+<h2>Semester III</h2>
+<ol>
+<li>Digital Image Processing</li>
+<li>Python Programming</li>
+<li>Network Security and Cryptography</li>
+<li>Business Intelligence</li>
+<li>Python Programming Lab</li>
+<li>Web Design</li>
+<li>Digital Image Processing Using MATLAB</li>
+</ol>
+
+<h2>Semester IV</h2>
+<ol>
+<li>Project Work and Viva Voce</li>
+</ol>
+
+<h2>Elective Papers I & II</h2>
+<ol>
+<li>PHP Programming</li>
+<li>Cloud Computing</li>
+</ol>
+
+</body>
+</html>
