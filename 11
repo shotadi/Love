@@ -1,0 +1,177 @@
+<!-- 1. Main.html -->
+
+<html>
+<body background="" font="times new roman" align="center">
+
+<font color="blue">
+<h1><b>KATHIR COLLEGE OF ARTS AND SCIENCE</b></h1>
+<h3>Jothipuram,Coimbatore-19</h3>
+
+<img src="logo.jpg">
+
+<marquee>
+<b><h2><font color="red">****KATHIR****</font></h2></b>
+</marquee>
+
+<a href="vission.html"><b><h3>College vission and mission</h3></b></a>
+<a href="contact.html"><b><h3>contact us</h3></b></a>
+<a href="Facilities.html"><b><h3>College Facilities</h3></b></a>
+<a href="achivements.html"><b><h3>College achivements</h3></b></a>
+<a href="course.html"><b><h3>College course offered</h3></b></a>
+
+</font>
+</body>
+</html>
+
+
+<!-- 2. vission.html -->
+
+<html>
+<body background="" font="times new roman" align="center">
+
+<font color="blue">
+<h1><b>KATHIR COLLEGE OF ARTS AND SCIENCE</b></h1>
+<h3>Neelambur,Coimbatore-19</h3>
+</font>
+
+<h2><font color="red">VISION</font></h2>
+<h3>
+To create a centre of academic excellence in
+education and research through professionalism
+and to serve the society by improving knowledge
+skill and ethical values.
+</h3>
+
+<h2><font color="red">MISSION</font></h2>
+<h3>
+To aspire and strive for excellence in education
+and to commit the knowledge and expertise of
+teaching fraternity for the welfare of the students
+and prosperity of the society.
+</h3>
+
+<h2><font color="red">OBJECTIVES</font></h2>
+<ul>
+<h3>
+<li>Promoting knowledge and skills of learners.</li>
+<li>Awakening social consciousness among students.</li>
+<li>Uploading the rich cultural heritage and secular ideals.</li>
+<li>Developing wholesome personality of students.</li>
+<li>Preparing learners for better career options.</li>
+</h3>
+</ul>
+
+</body>
+</html>
+
+
+<!-- 3. contact.html -->
+
+<html>
+<body background="" font="times new roman" align="center">
+
+<font color="blue">
+<h1><b>KATHIR COLLEGE OF ARTS AND SCIENCE</b></h1>
+<h3>Neelambur,Coimbatore-19</h3>
+
+<table frame="box" bgcolor="skyblue"
+align="center" border="5">
+
+<tr>
+<td><img src="map.png"></td>
+<td>
+The Principal Kathir College of Arts and Science
+P.Box. No. 7204,
+"Wisdom Tree", Neelambur
+Coimbatore-641 062.
+Tamilnadu, India.
+</td>
+</tr>
+
+</table>
+</font>
+</body>
+</html>
+
+
+<!-- 4. Facilities.html -->
+
+<html>
+<body background="" font="times new roman" align="center">
+
+<font color="blue">
+<h1><b>KATHIR COLLEGE OF ARTS AND SCIENCE</b></h1>
+<h3>Neelambur,Coimbatore-19</h3>
+<h2><font color="red">Facilities</font></h2>
+
+<pre>
+Hostel
+Separate hostels for men and women with indoor and outdoor games.
+Congenial atmosphere for students.
+Kitchen ensures hygienic and healthy food.
+
+Library
+Knowledge packed library with books, journals and magazines.
+</pre>
+
+</font>
+</body>
+</html>
+
+
+<!-- 5. achivements.html -->
+
+<html>
+<body background="" font="times new roman" align="center">
+
+<font color="blue">
+<h1><b>KATHIR COLLEGE OF ARTS AND SCIENCE</b></h1>
+<h3>Jothipuram,Coimbatore-19</h3>
+
+<h2><font color="red">ACHIEVEMENTS</font></h2>
+
+<h3>Academic Year 2017-2018: 100% placement</h3>
+
+<pre>
+Just Dail
+Winners Education
+Bluez Informatic Solution
+IDBI Federal Life Insurance Co.Ltd.
+Future Generali
+Hematic Business Solution
+Bright Star
+Slypbox
+Watermelon Pvt. Ltd and Flipkart
+</pre>
+
+</font>
+</body>
+</html>
+
+
+<!-- 6. course.html -->
+
+<html>
+<body background="" font="times new roman" align="center">
+
+<font color="blue">
+<h1><b>KATHIR COLLEGE OF ARTS AND SCIENCE</b></h1>
+<h3>Neelambur,Coimbatore-19</h3>
+
+<h2><font color="red">COURSE</font></h2>
+
+<h3>
+B.Sc Computer Science<br>
+M.Sc Computer Science<br>
+B.Sc Information Technology<br>
+B.Sc Mathematics<br>
+B.Com<br>
+M.Com<br>
+BCA<br>
+B.Com (Computer Application)<br>
+BBM
+</h3>
+
+</font>
+</body>
+</html>
